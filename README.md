@@ -41,8 +41,7 @@ Follow these instructions to get SerenityChat up and running on your local machi
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/serenity-chat.git
-cd serenity-chat
+https://github.com/ShubhamGupta-prog/SERENITY-CHAT-V5.git
 ```
 
 2. **Install dependencies**
