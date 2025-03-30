@@ -1,6 +1,5 @@
 # SerenityChat
 
-![SerenityChat](https://img.shields.io/badge/SerenityChat-v1.0-blue)
 ![React](https://img.shields.io/badge/React-18.x-61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -9,10 +8,10 @@ SerenityChat is a mental health focused chat application designed to provide emo
 
 ## Mental Health Focus
 
-SerenityChat is specifically designed to support mental health and emotional wellbeing:
+SerenityChat is specifically designed to support mental health and emotional well-being:
 
-- **Mental Health Only**: The AI assistant is programmed to respond exclusively to questions related to mental health, emotional wellbeing, coping strategies, and self-care.
-- **No General-Purpose Questions**: The application will politely redirect non-mental health related queries (like coding, general knowledge, etc.) back to mental health topics.
+- **Mental Health Only**: The AI assistant is programmed to respond exclusively to questions related to mental health, emotional well-being, coping strategies, and self-care.
+- **No General-Purpose Questions**: The application will politely redirect non-mental health-related queries (like coding, general knowledge, etc.) back to mental health topics.
 - **Content Filtering**: A warning system detects and alerts users when they ask questions outside the mental health focus area.
 - **Supportive Language**: The AI maintains a calm, empathetic tone designed to provide emotional support.
 - **Safety First**: For crisis situations, the app provides quick access to professional resources through the Crisis Resources card.
@@ -21,15 +20,11 @@ This specialized focus ensures that SerenityChat remains an effective tool for m
 
 ## Features
 
-- **AI-Powered Mental Health Support**: Chat with an AI companion focused exclusively on mental health, emotional wellbeing, and coping strategies.
+- **AI-Powered Mental Health Support**: Chat with an AI companion focused exclusively on mental health, emotional well-being, and coping strategies.
 - **Mindfulness Exercises**: Access breathing exercises and other mindfulness practices to reduce stress and anxiety.
 - **Mood Tracker**: Log your emotional state and track your mood patterns over time.
 - **Crisis Resources**: Quick access to crisis support resources and helplines.
 - **Daily Reflection**: Practice gratitude and self-reflection with guided daily check-ins.
-
-## Screenshot
-
-![SerenityChat App Screenshot](https://via.placeholder.com/800x450.png?text=SerenityChat+Screenshot)
 
 ## Getting Started
 
@@ -69,12 +64,6 @@ Create a `.env` file in the root directory with your Gemini API key:
 ```plaintext
 VITE_GEMINI_API_KEY=your_gemini_api_key_here
 ```
-
-To get a Gemini API key:
-1. Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Sign in with your Google account
-3. Generate an API key
-4. Copy the key to your `.env` file
 
 ### Running the Application
 
@@ -121,7 +110,7 @@ serenity-chat/
 
 ## Usage
 
-- **Chat Interface**: Ask questions related to mental health, emotional wellbeing, or coping strategies
+- **Chat Interface**: Ask questions related to mental health, emotional well-being, or coping strategies
 - **Mindfulness Exercises**: Click on the green "Mindfulness Exercises" card to access breathing exercises
 - **Mood Tracker**: Use the amber "Mood Tracker" card to log your mood and see your emotional trends
 - **Crisis Resources**: Access emergency contacts and support resources through the purple "Crisis Resources" card
