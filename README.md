@@ -88,7 +88,7 @@ http://localhost:5173
 ## Project Structure
 
 ```
-serenity-chat/
+SERENITY-CHAT-V5
 ├── public/            # Static assets
 ├── src/
 │   ├── components/    # React components
