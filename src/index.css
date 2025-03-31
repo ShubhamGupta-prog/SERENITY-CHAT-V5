@@ -225,6 +225,54 @@
   .animate-fade-in {
     animation: fadeIn 0.3s ease-out forwards;
   }
+  
+  /* Additional fade-in animations with different timings for quote collage */
+  @keyframes fadeInStaggered0 {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInStaggered1 {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInStaggered2 {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fade-in-0 {
+    animation: fadeInStaggered0 0.5s ease-out forwards;
+  }
+  
+  .animate-fade-in-1 {
+    animation: fadeInStaggered1 0.6s ease-out forwards;
+  }
+  
+  .animate-fade-in-2 {
+    animation: fadeInStaggered2 0.7s ease-out forwards;
+  }
+  
+  /* Pulsing glow animation for quote cards */
+  @keyframes quoteGlow {
+    0%, 100% { box-shadow: 0 0 0 rgba(255, 255, 255, 0); }
+    50% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); }
+  }
+  
+  .quote-card-glow {
+    animation: quoteGlow 3s infinite;
+  }
+  
+  /* Slow rotation animation */
+  @keyframes slowRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .quote-icon-rotate {
+    animation: slowRotate 20s linear infinite;
+  }
 
   /* Emergency resource highlight effect */
   @keyframes emergency-highlight {
@@ -272,5 +320,30 @@
   
   .mood-btn-selected {
     animation: mood-select 0.5s ease;
+  }
+
+  /* Scrolling animations for quote carousel */
+  @keyframes scrollRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-350px * 6 - 1rem * 6)); } /* 6 cards plus 6 gaps */
+  }
+  
+  @keyframes scrollLeft {
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(calc(-350px * 6 - 1rem * 6)); } /* Move right to left */
+  }
+  
+  .animate-scroll-right {
+    animation: scrollRight 90s linear infinite;
+    width: calc(350px * 12 + 1rem * 12); /* 12 cards (doubled for seamless loop) plus gaps */
+  }
+  
+  .animate-scroll-left {
+    animation: scrollLeft 90s linear infinite reverse; /* Reverse makes it go the opposite direction */
+    width: calc(350px * 12 + 1rem * 12); /* 12 cards (doubled for seamless loop) plus gaps */
+  }
+  
+  .animation-paused {
+    animation-play-state: paused;
   }
 }

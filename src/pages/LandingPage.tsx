@@ -1,9 +1,9 @@
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Heart, MessageCircle, Brain, Shield } from "lucide-react";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
+import { QuoteCollage } from "@/components/ui/QuoteCollage";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -80,28 +80,19 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Inspiring Quotes Collage Section */}
       <section className="py-16 px-4">
-        <div className="container max-w-4xl mx-auto">
-          <h2 className="text-3xl font-display font-semibold text-center mb-10 text-primary dark:text-gray-100" style={{ fontFamily: "Times New Roman, serif" }}>
-          "Inspiring Voices, Healing Words"
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="text-3xl font-display font-semibold text-center mb-8 text-primary dark:text-gray-100" style={{ fontFamily: "Times New Roman, serif" }}>
+            Inspiring Voices, Healing Words
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="glass-panel p-6 rounded-xl transition-all duration-300 hover:shadow-md animate-fade-in dark:bg-gray-800/30 dark:border-gray-700/30">
-              <p className="italic text-muted-foreground dark:text-gray-300 mb-4">
-                "Emotional pain is not something that should be hidden away and never spoken about. There is truth in your pain, there is growth in your pain, but only if it’s first brought out into the open."
-              </p>
-              <p className="font-medium">– Steven Aitchison</p>
-            </div>
-            
-            <div className="glass-panel p-6 rounded-xl transition-all duration-300 hover:shadow-md animate-fade-in dark:bg-gray-800/30 dark:border-gray-700/30" style={{ animationDelay: "0.1s" }}>
-              <p className="italic text-muted-foreground dark:text-gray-300 mb-4">
-                "You say you’re depressed — all I see is resilience. You are allowed to feel messed up and inside out. It doesn’t mean you’re defective–it just means you’re human."
-              </p>
-              <p className="font-medium">– David Mitchell</p>
-            </div>
-          </div>
+          <p className="text-center text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto mb-10">
+            Words have power. They can heal, inspire, and remind us that we're not alone in our journey. 
+            Insightful wisdom from those who truly understand the depths of mental health.
+          </p>
+          
+          <QuoteCollage />
           
           <div className="mt-12 text-center">
             <Button 
