@@ -1,4 +1,3 @@
-
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Bot, User } from "lucide-react";
@@ -15,8 +14,20 @@ interface ChatMessageProps {
   isLast?: boolean;
 }
 
+// Function to format message content
+const formatMessageContent = (content: string): string => {
+  // Replace markdown-style bullets with actual bullet points
+  let formattedContent = content.replace(/\*\s/g, '• ');
+  
+  // Ensure proper line breaks
+  formattedContent = formattedContent.replace(/\n{3,}/g, '\n\n'); // Limit consecutive line breaks
+  
+  return formattedContent;
+};
+
 export function ChatMessage({ message, isLast = false }: ChatMessageProps) {
   const isUser = message.role === "user";
+  const formattedContent = formatMessageContent(message.content);
 
   return (
     <div
@@ -42,7 +53,7 @@ export function ChatMessage({ message, isLast = false }: ChatMessageProps) {
             {isUser ? "You" : "SerenityChat"}
           </p>
           <div className="prose prose-sm max-w-none">
-            <p className="text-foreground/90 whitespace-pre-wrap">{message.content}</p>
+            <p className="text-foreground/90 whitespace-pre-wrap">{formattedContent}</p>
           </div>
         </div>
       </div>
