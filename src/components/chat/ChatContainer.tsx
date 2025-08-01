@@ -21,7 +21,7 @@ export function ChatContainer() {
   const [messages, setMessages] = useState<MessageType[]>([
     {
       id: "1",
-      content: "Hello! I'm SerenityChat, your mental health companion. I'm here to support your emotional wellbeing and help with stress, anxiety, and other mental health concerns. How can I assist you today?",
+      content: "Hello! I'm here to support your emotional wellbeing and help with stress, anxiety, and other mental health concerns. How can I assist you today?",
       role: "assistant",
       timestamp: new Date(),
     },
